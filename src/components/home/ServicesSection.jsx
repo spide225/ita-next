@@ -46,7 +46,7 @@ const services = [
 function ServicesSection() {
     return (
         <motion.div
-            variants={animStaggerContainer}
+            variants={animSlideInUp}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.4 }}

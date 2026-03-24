@@ -1,10 +1,10 @@
 'use client'
 
-import banner from "../../public/img/home-banner-2.png"
-import Image from "next/image";
 import Link from "next/link"
-import { motion,  } from "framer-motion";
+import banner from "../../public/img/home-main-banner.png"
+import { motion } from "framer-motion";
 import { animFadeInUp } from "../../lib/animations/Variants";
+import Image from "next/image";
 
 function Hero() {
   return (
@@ -14,15 +14,19 @@ function Hero() {
       whileInView="show"
       viewport={{ once: true, amount: 0.4 }}
     >
-      <section
-        className="
-        relative bg-gray-100 bg-cover bg-center h w-full md:text-left"
-        style={{ backgroundImage: `url(${banner})` }}
+      <section className="relative bg-cover bg-center w-full md:text-left">
+        <Image
+        src={banner}
+        fill
+        alt="Grande armoire"
+        className="object-cover -z-10" // Se place derrière le contenu
+        priority // Optionnel : pour les images au-dessus de la ligne de flottaison
+        >
 
-      >
+        </Image>
         <div className="max-w-7xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10">
           <div>
-            <h1 className="text-3xl font-extrabold md:text-5xl text-blue-900 text-shadow-xl">
+            <h1 className="text-3xl font-extrabold md:text-5xl text-blue-900">
               Solutions Électro-techniques Fiables
             </h1>
             <p className="mt-4 text-lg text-gray-700 font-semibold">
@@ -41,7 +45,6 @@ function Hero() {
         </div>
       </section>
     </motion.div>
-
   );
 }
 
