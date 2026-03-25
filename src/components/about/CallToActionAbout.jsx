@@ -14,7 +14,7 @@ function CallToActionAbout() {
         >
             <section className="bg-blue-600 py-16 text-center text-white">
                 <h2 className="text-3xl font-bold">Un projet électrotechnique en vue ?</h2>
-                <p className="mt-3">Contactez ITA pour discuter de vos besoins et obtenir un devis personnalisé.</p>
+                <p className="mt-3">Contactez Ivoire Technologie Appliquée pour discuter de vos besoins et obtenir un devis personnalisé.</p>
                 <motion.div
                     variants={animRotateScale}
                     initial="hidden"

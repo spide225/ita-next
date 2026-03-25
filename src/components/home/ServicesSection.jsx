@@ -54,13 +54,12 @@ function ServicesSection() {
             <section className="max-w-7xl mx-auto px-4 py-16">
                 <h2 className="text-3xl font-bold text-blue-900 text-center">Nos Services</h2>
                 <p className="mt-3 text-gray-600 text-center max-w-2xl mx-auto">
-                    Des prestations adaptées aux besoins des industriels et des entreprises dans plusieurs domaines d'expertises.
-                </p>
+                    Ivoire Technologie Appliquée (ITA) propose des prestations spécialisées et adaptées aux besoins des entreprises et industriels dans plusieurs domaines d’expertise : électricité, électronique, mécanique, chaudronnerie, informatique et hydraulique.                </p>
                 <motion.div
-                variants={animSlideInUp}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.4 }}
+                    variants={animSlideInUp}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, amount: 0.4 }}
                 >
                     <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-8">
                         {/* Automatique */}

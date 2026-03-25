@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { animZoomIn } from "../../lib/animations/Variants"
+import Link from "next/link"
 
 function CallToActionServices() {
     return (
@@ -12,11 +13,19 @@ function CallToActionServices() {
                 whileInView="show"
                 viewport={{ once: true, amount: 0.4 }}
             >
-                <h2 className="text-3xl font-bold">Besoin d’un service électrotechnique ?</h2>
-                <p className="mt-3">Contactez notre équipe pour une étude personnalisée de vos besoins.</p>
-                <a href="{% url 'PresentationApp:contact' %}" className="mt-6 inline-block bg-blue-50 text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100">
+                <h2 className="text-3xl font-bold">
+                    Besoin d’un service électrotechnique ?
+                </h2>
+                <p className="mt-3">
+                    <h3>Ivoire Technologie Appliquée est à votre service !</h3>
+                    Contactez notre équipe d’experts pour une étude personnalisée de vos besoins en électrotechnique, automatisation, maintenance industrielle et solutions industrielles.
+                </p>
+                <Link
+                    href="/contact"
+                    className="mt-6 inline-block bg-blue-50 text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100"
+                >
                     Nous contacter
-                </a>
+                </Link>
             </motion.div>
         </section>
     )

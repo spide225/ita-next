@@ -12,7 +12,7 @@ const contactItems = [
   {
     icon: <Mail size={32} />,
     title: "Email",
-    info: "contact@ita-ci.ci",
+    info: "contact@ita-ci.com",
   },
   {
     icon: <MapPin size={32} />,

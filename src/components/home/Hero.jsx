@@ -14,24 +14,22 @@ function Hero() {
       whileInView="show"
       viewport={{ once: true, amount: 0.4 }}
     >
-      <section className="relative bg-cover bg-center w-full md:text-left">
+      <section className="relative bg-cover bg-center w-full min-h-screen flex items-center md:text-left">
         <Image
-        src={banner}
-        fill
-        alt="Grande armoire"
-        className="object-cover -z-10" // Se place derrière le contenu
-        priority // Optionnel : pour les images au-dessus de la ligne de flottaison
-        >
-
-        </Image>
+          src={banner}
+          fill
+          alt="Ivoire Technologie Appliquée ITA – Solutions électrotechniques et industrielles"
+          className="object-cover -z-10"
+          priority
+        />
         <div className="max-w-7xl mx-auto px-4 py-20 grid md:grid-cols-2 gap-10">
           <div>
             <h1 className="text-3xl font-extrabold md:text-5xl text-blue-900">
-              Solutions Électro-techniques Fiables
+              Ivoire Technologie Appliquée (ITA) – Solutions Électro-techniques Fiables
             </h1>
             <p className="mt-4 text-lg text-gray-700 font-semibold">
-              ITA accompagne les entreprises dans leurs projets d’ingénierie électrotechnique,
-              de maintenance industrielle et d’automatisation.
+              Nous vous accompagnons dans vos projets d’ingénierie électrotechnique, de maintenance industrielle,
+              d’automatisation et de solutions technologiques avancées.
             </p>
             <div className="mt-6 flex space-x-4">
               <Link

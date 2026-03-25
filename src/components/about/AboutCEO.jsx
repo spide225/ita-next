@@ -3,7 +3,6 @@
 import imgCEO from "../../public/img/photo-dg.jpg"
 import { motion } from "framer-motion"
 import { animSlideInLeft, animSlideInRight, animFadeOut, animPopIn } from "../../lib/animations/Variants"
-
 import Image from "next/image"
 
 function AboutCEO() {
@@ -18,11 +17,11 @@ function AboutCEO() {
                         viewport={{ once: true, amount: 0.4 }}
                     >
                         <Image 
-                        src={imgCEO} 
-                        className="rounded-full object-cover h-100 w-100"
-                        alt="Directeur Général" />
+                            src={imgCEO} 
+                            className="rounded-full object-cover h-100 w-100"
+                            alt="Koffi AMAN, Directeur Général de Ivoire Technologie Appliquée (ITA)" 
+                        />
                     </motion.div>
-
                 </div>
                 <motion.div
                     variants={animFadeOut}
@@ -31,11 +30,12 @@ function AboutCEO() {
                     viewport={{ once: true, amount: 0.4 }}
                 >
                     <div>
-                        <h2 className="text-2xl font-bold text-blue-900">Le mot du dirigeant</h2>
+                        <h2 className="text-2xl font-bold text-blue-900">
+                            Le mot du dirigeant
+                        </h2>
                         <p className="mt-4 text-gray-700">
-                            « Chez ITA, nous croyons que l’électrotechnique est un levier stratégique pour la croissance
-                            et la compétitivité des entreprises africaines. Notre mission est d’apporter des solutions fiables,
-                            performantes et adaptées aux besoins spécifiques de chaque client. »
+                            « Chez <strong>Ivoire Technologie Appliquée (ITA)</strong>, nous croyons que l’ingénierie électrotechnique et les solutions industrielles sont des leviers stratégiques pour la croissance et la compétitivité des entreprises africaines. 
+                            Notre mission est d’apporter des solutions fiables, performantes et adaptées aux besoins spécifiques de chaque client, incluant l’électricité, l’électronique, la mécanique, l’informatique et l’automatisation. »
                         </p>
                         <p className="mt-6 font-semibold text-gray-900">Koffi AMAN</p>
                         <p className="text-sm text-gray-600">Directeur Général</p>

@@ -4,16 +4,19 @@ import { motion } from "framer-motion"
 
 const testimonials = [
   {
-    text: "ITA nous a accompagnés dans la modernisation de notre ligne de production. Résultat : +30% de productivité.",
-    author: "— Directeur d’usine agro-industrielle",
+    text: "Ivoire Technologie Appliquée (ITA) nous a accompagnés dans la modernisation de notre ligne de production. Résultat : notre productivité s'est accrue.",
+    author: "— Directeur d’usine",
+    enterprise: ""
   },
   {
-    text: "Une équipe professionnelle, réactive et à l’écoute. Je recommande sans hésiter.",
+    text: "Une équipe professionnelle, réactive et à l’écoute. ITA a parfaitement répondu à nos besoins, tant en maintenance qu'en nouveau projet. Je recommande sans hésiter.",
     author: "— Responsable technique",
+    enterprise: ""
   },
   {
-    text: "Grâce à leur maintenance préventive, nos équipements tournent sans interruption depuis 18 mois.",
+    text: "Grâce à la maintenance préventive de Ivoire Technologie Appliquée (ITA), nos équipements tournent sans interruption depuis 18 mois.",
     author: "— Chef de production",
+    enterprise: ""
   },
 ]
 
@@ -38,7 +41,7 @@ function Testimonials() {
           transition={{ delay: 0.2, duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Ils nous ont fait confiance :
+          Nos clients industriels et entreprises nous ont fait confiance :
         </motion.p>
 
         <div className="mt-8 grid md:grid-cols-3 gap-8">
@@ -59,6 +62,7 @@ function Testimonials() {
             >
               <p className="text-gray-700 italic">"{t.text}"</p>
               <h4 className="mt-4 font-semibold text-gray-900">{t.author}</h4>
+              <h4 className="mt-4 font-semibold text-gray-900">{t.enterprise}</h4>
             </motion.div>
           ))}
         </div>

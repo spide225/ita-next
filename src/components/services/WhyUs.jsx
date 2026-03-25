@@ -6,15 +6,15 @@ import { animFadeOut } from "../../lib/animations/Variants"
 const args = [
     {
         arg: "Expertise",
-        desc: "Une équipe expérimentée, formée aux meilleures pratiques en électrotechnique et automatisation."
+        desc: "Ivoire Technologie Appliquée (ITA) dispose d’une équipe expérimentée, formée aux meilleures pratiques en électrotechnique, automatisation et solutions industrielles."
     },
     {
         arg: "Qualité",
-        desc: "Des interventions précises et fiables, avec un engagement sur la performance et la sécurité."
+        desc: "Nos interventions sont précises et fiables, avec un engagement fort sur la sécurité et la satisfaction client, par Ivoire Technologie Appliquée (ITA)."
     },
     {
         arg: "Flexibilité",
-        desc: "Des solutions adaptées aux besoins et contraintes spécifiques de chaque client."
+        desc: "Ivoire Technologie Appliquée (ITA) propose des solutions sur mesure, adaptées aux besoins et contraintes spécifiques de chaque entreprise ou industriel."
     }
 ]
 
